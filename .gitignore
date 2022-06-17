@@ -1,4 +1,5 @@
-
+*.json
 *.jar
 *.class
 /data
+/us_babynames
