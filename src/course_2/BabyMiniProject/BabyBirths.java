@@ -1,11 +1,11 @@
-package BabyMiniProject;
+package course_2.BabyMiniProject;
 
 import org.apache.commons.csv.CSVRecord;
 import edu.duke.*;
 
 public class BabyBirths {
     public static void main (String [] args){
-        FileResource fr = new FileResource("us_babynames/us_babynames_by_decade/yob1880s.csv");
+        FileResource fr = new FileResource("input_files_2/us_babynames_by_decade/yob1880s.csv");
         totalBirths(fr);
     }
 

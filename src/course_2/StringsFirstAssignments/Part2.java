@@ -1,4 +1,4 @@
-package StringsFirstAssignments;
+package course_2.StringsFirstAssignments;
 
 public class Part2 {
     public static String findSimpleGene2 (String gene, String startCodon, String stopCodon){

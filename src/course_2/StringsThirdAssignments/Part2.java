@@ -1,4 +1,4 @@
-package StringsThirdAssignments;
+package course_2.StringsThirdAssignments;
 
 public class Part2 {
     public static double cgRatio (String dna){

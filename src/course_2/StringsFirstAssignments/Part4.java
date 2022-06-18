@@ -1,4 +1,4 @@
-package StringsFirstAssignments;
+package course_2.StringsFirstAssignments;
 import edu.duke.*;
 
 public class Part4 {

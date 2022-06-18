@@ -1,7 +1,6 @@
-package StringsThirdAssignments;
+package course_2.StringsSecondAssignments;
 
 import edu.duke.FileResource;
-import edu.duke.StorageResource;
 
 public class Part1 {
     public static int findStopCodon(String dna, int startIndex, String stopCodon){
@@ -51,36 +50,14 @@ public class Part1 {
             startIndex = dna.indexOf(gene, startIndex) + gene.length();
         }
     }
-
-    public static StorageResource getAllGenes(String dna){
-        StorageResource allGenes = new StorageResource();
-        dna = dna.toLowerCase();
-        int startIndex = 0;
-        String gene = "";
-        while (true){
-            if (startIndex < dna.length()){
-                gene = findGene(dna, startIndex);
-            }
-            if (gene.isEmpty()){
-                break;
-            }
-            allGenes.add(gene);
-            startIndex = dna.indexOf(gene, startIndex) + gene.length();
-        }
-        return allGenes;
-    }
-
+    
     public static void main (String [] args){
-        // System.out.println(Part2.cgRatio("ATGCCATAGGGCCCC"));
-        // System.out.println(Part2.countCTG("ATGCTGCTGCATGCTGAG"));
-
-        FileResource fr = new FileResource("input-files/GRch38dnapart.txt");
+        FileResource fr = new FileResource("input_files_2/brca1line.txt");
         String dna = fr.asString();
-        System.out.println(Part2.cgRatio("input-files/GRch38dnapart.txt"));
+        System.out.println(findStopCodon(dna, 0, "TGA"));
+        // System.out.println(findGene("", 0));
         printAllGenes(dna);
-        StorageResource allGenes = getAllGenes(dna);
-        Part3.processGenes(allGenes);
-        System.out.println(Part2.countCTG(dna));
-
+        System.out.println(Part2.howMany("GAA", dna));
+        System.out.println(Part3.countGenes(dna));
     }
 }

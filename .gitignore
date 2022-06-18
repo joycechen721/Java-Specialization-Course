@@ -1,5 +1,10 @@
 *.json
 *.jar
 *.class
-/data
-/us_babynames
+/.idea
+/out/
+*.iml
+*.xml
+*.iws
+*.ipr
+*.idea

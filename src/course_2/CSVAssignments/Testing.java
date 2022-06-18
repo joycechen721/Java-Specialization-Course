@@ -1,4 +1,4 @@
-package CSVAssignments;
+package course_2.CSVAssignments;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.apache.commons.csv.CSVParser;

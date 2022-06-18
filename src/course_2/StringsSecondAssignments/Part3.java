@@ -1,4 +1,4 @@
-package StringsSecondAssignments;
+package course_2.StringsSecondAssignments;
 
 public class Part3 {
     public static int countGenes(String dna){

@@ -1,4 +1,4 @@
-package StringsFirstAssignments;
+package course_2.StringsFirstAssignments;
 
 public class Part3 {
     public static boolean twoOccurrences(String stringa, String stringb){

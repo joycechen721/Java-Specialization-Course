@@ -1,4 +1,4 @@
-package CSVAssignments;
+package course_2.CSVAssignments;
 import edu.duke.*;
 import org.apache.commons.csv.*;
 import java.io.*;

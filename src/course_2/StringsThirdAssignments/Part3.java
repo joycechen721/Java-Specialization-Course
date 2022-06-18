@@ -1,4 +1,4 @@
-package StringsThirdAssignments;
+package course_2.StringsThirdAssignments;
 import edu.duke.StorageResource;
 
 public class Part3 {

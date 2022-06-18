@@ -1,4 +1,4 @@
-package StringsSecondAssignments;
+package course_2.StringsSecondAssignments;
 
 public class Part2 {
     public static int howMany(String stringa, String stringb){

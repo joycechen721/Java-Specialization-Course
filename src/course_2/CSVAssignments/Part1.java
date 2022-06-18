@@ -1,10 +1,10 @@
-package CSVAssignments;
+package course_2.CSVAssignments;
 import edu.duke.*;
 import org.apache.commons.csv.*;
 
 public class Part1 {
     public static void tester(){
-        FileResource fr = new FileResource("input-files/exportdata.csv");
+        FileResource fr = new FileResource("input_files_2/exportdata.csv");
         CSVParser parser = fr. getCSVParser();
         System.out.println(numberOfExporters(parser, "cocoa"));
     }
