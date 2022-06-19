@@ -1,2 +1,2 @@
 ##Duke Java Specialization Course
-Code repo for all courses.
+Code repository for the assignments and projects of all 5 courses.
