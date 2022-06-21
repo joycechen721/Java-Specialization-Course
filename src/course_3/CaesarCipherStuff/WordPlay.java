@@ -12,24 +12,22 @@ public class WordPlay {
     }
 
     public static String replaceVowels (String phrase, char ch){
-        StringBuilder replaced = new StringBuilder();
+        StringBuilder replaced = new StringBuilder(phrase);
         for (int i = 0; i < phrase.length(); i++) {
             char currChar = phrase.charAt(i);
-            if (isVowel(currChar)) replaced.append(ch);
-            else replaced.append(currChar);
+            if (isVowel(currChar)) replaced.setCharAt(i, ch);
         }
         return replaced.toString();
     }
 
     public static String emphasize (String phrase, char ch){
-        StringBuilder replaced = new StringBuilder();
+        StringBuilder replaced = new StringBuilder(phrase);
         for (int i = 0; i < phrase.length(); i++) {
             char currChar = phrase.charAt(i);
             if (Character.toLowerCase(currChar) == ch){
-                if (i % 2 == 0) replaced.append('*');
-                else replaced.append('+');
+                if (i % 2 == 0) replaced.setCharAt(i, '*');
+                else replaced.setCharAt(i, '+');
             }
-            else replaced.append(currChar);
         }
         return replaced.toString();
     }
